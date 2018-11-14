@@ -1,4 +1,6 @@
 <resources>
     <string name="app_name">MovieRater</string>
     <string name="name">Name</string>
+    <string name="venom">Venom</string>
+    <string name="description">Description</string>
 </resources>
