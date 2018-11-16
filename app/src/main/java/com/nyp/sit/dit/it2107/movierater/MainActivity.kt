@@ -17,7 +17,9 @@ class MainActivity : AppCompatActivity() {
             { violence.visibility=View.VISIBLE
                 languageUsed.visibility=View.VISIBLE
             }
-
+            else {violence.visibility=View.INVISIBLE
+                languageUsed.visibility=View.INVISIBLE
+            }
         }
     }
 }
