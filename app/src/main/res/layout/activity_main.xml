@@ -18,7 +18,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="textPersonName"
-            android:text="@string/venom"
+            android:hint="@string/NHint"
             android:id="@+id/movieName"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/name"/>
@@ -30,10 +30,95 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/movieName"/>
     <EditText
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/DVenom"
+            android:hint="@string/DHint"
             android:id="@+id/DText"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/description"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/language"
+            android:id="@+id/language"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/DText"/>
+    <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id ="@+id/languageChoice"
+            tools:layout_editor_absoluteY="190dp"
+            tools:layout_editor_absoluteX="0dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/language"
+            android:orientation="horizontal"
+            >
+
+            <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/english"
+                    android:text="@string/english"
+            />
+
+            <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/Chinese"
+                    android:text="@string/chinese"
+            />
+
+            <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/Malay"
+                    android:text="@string/malay"
+            />
+
+            <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/Tamil"
+                    android:text="@string/tamil"
+            />
+    </RadioGroup>
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/releaseDate"
+            android:id="@+id/rDate"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/languageChoice"/>
+    <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/ReleaseDate"
+            android:inputType="date"
+            android:hint="dd-mm-yyyy"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/rDate"/>
+    <CheckBox
+            android:text="@string/not_suitable_for_all_audience"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/nc16"
+            app:layout_constraintTop_toBottomOf="@id/ReleaseDate"/>
+    <CheckBox
+            android:text="@string/violence"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/violence"
+            android:visibility="invisible"
+            app:layout_constraintTop_toBottomOf="@id/nc16"/>
+    <CheckBox
+            android:text="Language used"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/languageUsed"
+            android:visibility="invisible"
+            app:layout_constraintLeft_toRightOf="@id/nc16"
+            app:layout_constraintTop_toBottomOf="@id/nc16"/>
+
+
 </android.support.constraint.ConstraintLayout>

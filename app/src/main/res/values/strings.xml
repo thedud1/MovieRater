@@ -3,5 +3,14 @@
     <string name="name">Name</string>
     <string name="venom">Venom</string>
     <string name="description">Description</string>
-    <string name="DVenom">When Eddie Brock acquires the powers of a symbiote, he will have to release his alter-ego "Venom" to save his life</string>
+    <string name="language">Language</string>
+    <string name="DHint">Enter a short description of the movie</string>
+    <string name="NHint">Enter the title of the movie</string>
+    <string name="english">English</string>
+    <string name="chinese">Chinese</string>
+    <string name="malay">Malay</string>
+    <string name="tamil">Tamil</string>
+    <string name="releaseDate">Release Date</string>
+    <string name="violence">violence</string>
+    <string name="not_suitable_for_all_audience">Not suitable for all audience</string>
 </resources>
