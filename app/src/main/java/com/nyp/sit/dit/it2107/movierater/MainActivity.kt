@@ -6,6 +6,7 @@ import android.view.View
 import android.widget.Toast
 import kotlinx.android.synthetic.main.activity_main.*
 
+
 class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -21,5 +22,21 @@ class MainActivity : AppCompatActivity() {
                 languageUsed.visibility=View.INVISIBLE
             }
         }
+
+        fun validate()
+        {
+            if(movieName.text.isEmpty())
+                movieName.setError("Field empty")
+
+            if(DText.text.isEmpty())
+                DText.setError("Field empty")
+
+            if(ReleaseDate.text.isEmpty())
+                ReleaseDate.setError("Field empty")
+        }
+
+        fun onBtnClicked(v: View)
+        {
+            validate()}
     }
 }
