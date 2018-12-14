@@ -1,11 +1,11 @@
 package com.nyp.sit.dit.it2107.movierater
 
 class Movie {
-    var movieName : String = "Venom"
-    var movieDesc : String = "When Eddie Brock " +
+    var movieName : String = "\n Venom \n"
+    var movieDesc : String = "\nWhen Eddie Brock " +
             "acquires the powers of a symbiote, he will have to" +
-            " release his alter-ego Venom to save his life."
-    var language : String = "English"
-    var relDate : String = "03-10-2018"
-    var suitable : String = "Yes"
+            " release his alter-ego Venom to save his life. \n"
+    var language : String = "\nEnglish \n"
+    var relDate : String = "\n03-10-2018 \n"
+    var suitable : String = "\nYes\n"
 }
