@@ -20,6 +20,7 @@
             android:inputType="textPersonName"
             android:hint="@string/NHint"
             android:id="@+id/movieName"
+
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/name"/>
     <TextView
@@ -125,8 +126,7 @@
             android:layout_height="wrap_content"
             android:id="@+id/validate"
             app:layout_constraintTop_toBottomOf="@id/languageUsed"
-
-    />
+            />
 
 
 </android.support.constraint.ConstraintLayout>

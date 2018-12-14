@@ -14,4 +14,10 @@
     <string name="violence">violence</string>
     <string name="not_suitable_for_all_audience">Not suitable for all audience</string>
     <string name="add_movie">Add Movie</string>
+    <string name="title">Title:</string>
+    <string name="languageWithColon">language:</string>
+    <string name="overview">Overview:</string>
+    <string name="release_date">Release date:</string>
+    <string name="suitable_for_children_below_13">Suitable for children below 13:</string>
+    <string name="enter_your_review_for_the_movie_venom">Enter your review for the movie : Venom</string>
 </resources>
