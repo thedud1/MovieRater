@@ -28,20 +28,31 @@
 
     <TextView android:layout_width="wrap_content"
               android:layout_height="wrap_content"
-              android:id="@+id/desc"
+              android:id="@+id/overview"
               android:text="@string/overview"
               app:layout_constraintTop_toBottomOf="@+id/titleName"/>
 
     <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
               android:id="@+id/overviewName"
-              app:layout_constraintTop_toBottomOf="@+id/desc"
+              app:layout_constraintTop_toBottomOf="@+id/overview"
+              android:text=""/>
+
+    <TextView android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:id="@+id/review"
+              android:text="@string/review"
+              app:layout_constraintTop_toBottomOf="@+id/overviewName"/>
+
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+              android:id="@+id/reviewName"
+              app:layout_constraintTop_toBottomOf="@+id/review"
               android:text=""/>
 
     <TextView android:layout_width="wrap_content"
               android:layout_height="wrap_content"
               android:id="@+id/language"
               android:text="@string/languageWithColon"
-              app:layout_constraintTop_toBottomOf="@+id/overviewName"/>
+              app:layout_constraintTop_toBottomOf="@+id/reviewName"/>
 
     <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
               android:id="@+id/languageName"

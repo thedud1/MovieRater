@@ -1,5 +1,6 @@
 package com.nyp.sit.dit.it2107.movierater
 
+import android.content.Intent
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import android.view.ContextMenu
@@ -26,7 +27,9 @@ class LandingPage : AppCompatActivity() {
 
     override fun onContextItemSelected(item: MenuItem?): Boolean {
         if(item?.itemId ==0){
+            val addMovie = Intent(this, MainActivity::class.java)
 
+            startActivity(addMovie)
         }
         return super.onContextItemSelected(item)
 
